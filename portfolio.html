@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | PhotoPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Stella<span>Studios</span></a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact & Bookings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Portfolio</h1>
+                <p>A collection of my best work across all photography categories</p>
+            </div>
+        </section>
+
+        <section class="portfolio-grid-section">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="graduation">Graduation</button>
+                    <button class="filter-btn" data-filter="headshots">Headshots</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Portfolio items will be populated by JavaScript,, SUB PHOTOS THERE -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PhotoPro</h3>
+                    <p>Professional photography services specializing in graduation, headshots, events, and portraits. Capturing your special moments with creativity and expertise.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/stella.rza/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Book a Session</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Metro-Atlanta and Athens</p>
+                    <!-- <p><i class="fas fa-phone"></i> (555) 123-4567</p> -->
+                    <p><i class="fas fa-envelope"></i> stella42044@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-5PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Shots by Stella. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

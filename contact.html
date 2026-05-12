@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | PhotoPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Stella<span>Studios</span></a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact & Bookings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Book a Session</h1>
+                <p>Let's create something beautiful together!</p>
+            </div>
+        </section>
+
+        <section class="contact-page-section">
+            <div class="container">
+                <div class="contact-container">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h3>Send an Inquiry</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="category">Photography Category *</label>
+                                <select id="category" class="form-control" required>
+                                    <option value="">Select a category</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="headshots">Professional Headshots</option>
+                                    <option value="events">Events</option>
+                                    <option value="portraits">Portraits</option>
+                                    <option value="family">Family</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details / Questions *</label>
+                                <textarea id="message" class="form-control" placeholder="Tell me about your photography needs..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="width: 100%;">Send Inquiry</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Payment & Packages -->
+                    <div class="payment-container">
+                        <h3>Packages & Payment</h3>
+                        
+                        <div class="package-options">
+                            <div class="package-card selected" data-package="basic" data-price="299">
+                                <h4 class="package-name">Basic Session</h4>
+                                <div class="package-price">$80+</div>
+                                <p>1 hour session</p>
+                                <p>20 edited digital photos</p>
+                                <p>Online gallery</p>
+                            </div>
+                            
+                            <div class="package-card" data-package="standard" data-price="499">
+                                <h4 class="package-name">Standard Session</h4>
+                                <div class="package-price">$120+</div>
+                                <p>2 hour session</p>
+                                <p>40 edited digital photos</p>
+                                <p>Online gallery + 5 prints</p>
+                            </div>
+                            
+                            <div class="package-card" data-package="premium" data-price="799">
+                                <h4 class="package-name">Premium Session</h4>
+                                <div class="package-price">$200+</div>
+                                <p>4 hour session</p>
+                                <p>80 edited digital photos</p>
+                                <p>Premium album + all digital files</p>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="form-group">
+                            <label>Select Payment Method</label>
+                            <div class="payment-options">
+                                <div class="payment-option selected" data-method="paypal">
+                                    <div class="payment-icon">
+                                        <i class="fab fa-paypal"></i>
+                                    </div>
+                                    <div>PayPal</div>
+                                </div>
+                                
+                                <div class="payment-option" data-method="card">
+                                    <div class="payment-icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </div>
+                                    <div>Credit Card</div>
+                                </div>
+                                
+                                <div class="payment-option" data-method="venmo">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                    </div>
+                                    <div>Venmo</div>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
+                        
+                        <!-- <button class="btn" style="width: 100%; margin-top: 20px;" id="payButton">
+                            <i class="fas fa-lock"></i> Secure Payment $499
+                        </button> -->
+                        
+                        <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light); text-align: center;">
+                            <i class="fas fa-info-circle"></i> A 50% deposit is required to secure your booking
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PhotoPro</h3>
+                    <p>Professional photography services specializing in graduation, headshots, events, and portraits. Capturing your special moments with creativity and expertise.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/stella.rza/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Book a Session</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Metro-Atlanta and Athens</p>
+                    <!-- <p><i class="fas fa-phone"></i> (555) 123-4567</p> -->
+                    <p><i class="fas fa-envelope"></i> stella42044@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-5PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Shots by Stella. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
